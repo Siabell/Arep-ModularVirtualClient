@@ -34,7 +34,7 @@ An example with google.com and 1 thread:
 java -jar  ClientFromAWSToHeroku-1.0-SNAPSHOT.jar http://google.com 1
 ```
 
-### Prerequisites
+## Prerequisites
 
 You will need maven java installed on your machine to employ this program
 
