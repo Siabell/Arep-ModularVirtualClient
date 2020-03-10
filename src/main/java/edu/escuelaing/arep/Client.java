@@ -11,6 +11,12 @@ import java.net.URL;
  */
 public class Client
 {
+	/**
+	 * El cliente hace una peticion a una url e imprime en pantalla
+	 * lo que recibe
+	 * @param args
+	 * @throws Exception
+	 */
 	public static void main(String[] args) throws Exception { 
 	      URL url = new URL(args[0]); 
 	      try (BufferedReader reader = new BufferedReader(

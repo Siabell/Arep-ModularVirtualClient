@@ -12,12 +12,22 @@ public class ThreadClient implements Runnable{
 	private static long start;
 	private static AtomicLong num;
 	
+	/**
+	 * El threadClient inicia con una url, el tiempo inicial y una varible atomica
+	 * @param url1
+	 * @param timeStart
+	 * @param numT
+	 */
 	public ThreadClient(URL url1, long timeStart, AtomicLong numT) {
 		this.url = url1;
 		this.start = timeStart;
 		this.num = numT;
 	}
-
+	
+	/**
+	 * El ThreadClient hace la peticion a la url y cuando termina, retorna el
+	 * tiempo que se tarda en terminar.
+	 */
 	@Override
 	public void run() {
 		try (BufferedReader reader = new BufferedReader(

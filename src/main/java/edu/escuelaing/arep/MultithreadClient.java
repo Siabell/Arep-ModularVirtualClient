@@ -10,6 +10,12 @@ import java.util.concurrent.atomic.AtomicLong;
 
 public class MultithreadClient {
 	
+	/**
+	 * Cliente multihilo, que recibe dos argumentos, una url y un numero n, el cual crea n hilos que 
+	 * que son manejados por un pool de hilos
+	 * @param args 
+	 * @throws Exception
+	 */
 	public static void main(String[] args) throws Exception { 
 	      URL url = new URL(args[0]); 
 	      int numThreads = Integer.parseInt(args[1]);
